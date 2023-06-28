@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="login.css">
+    <title>Connexion</title>
+</head>
+<body>
+    <form method="POST" action="connexion.php">
+        <h1>Se connecter</h1>
+        <div class="input">
+            <input type="email" name="mail" placeholder="Email personnel" autocomplete="off" required>
+        </div>
+        <div class="input">
+            <input type="password" name="mdp" placeholder="Mot de passe" autocomplete="off" required>
+        </div>
+		<p>Je n'ai pas de compte, je m'en <a href="inscription.html">crée un.</a></p>
+		<p><a href="nouveaumdp.php" >Mot de passe oublié?</a></p>
+        <div>
+            <button type="submit" name="submit">Se connecter</button>
+        </div>
+    </form>
+</body>
+</html>
